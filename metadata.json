@@ -1,0 +1,8 @@
+{
+  "name": "RoadSense AI",
+  "description": "Intelligent road & civic damage detection, dispatch and accountability platform. Citizens report potholes and infrastructure issues with a photo; Gemini classifies damage, scores impact, and a multi-agent pipeline turns scattered complaints into accountable repair work orders.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ]
+}
