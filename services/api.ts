@@ -21,7 +21,14 @@ async function probeBackend(): Promise<boolean> {
     const t = setTimeout(() => ctrl.abort(), 1500);
     const r = await fetch('/api/health', { signal: ctrl.signal });
     clearTimeout(t);
-    backendUp = r.ok;
+    const ct = r.headers.get('content-type') || '';
+    // On static hosting the SPA rewrite returns index.html (text/html) — treat as "no backend".
+    if (r.ok && ct.includes('application/json')) {
+      const j = await r.json().catch(() => null);
+      backendUp = j?.ok === true;
+    } else {
+      backendUp = false;
+    }
   } catch {
     backendUp = false;
   }

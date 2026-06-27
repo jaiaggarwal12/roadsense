@@ -55,6 +55,6 @@ Vite, Express, cors, dotenv, tsx, TypeScript, and the `@google/genai` SDK. No fo
 submitted as our own.
 
 ## Links
-- **Deployed app (Google Cloud):** `<paste your Cloud Run / AI Studio link here>`
-- **GitHub repository:** `<paste your repo link here>`
+- **Deployed app (Google Cloud · Firebase Hosting):** https://roadsense-ai-8858c.web.app
+- **GitHub repository:** https://github.com/jaiaggarwal12/roadsense
 - **Demo video (optional):** `<paste link here>`

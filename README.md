@@ -2,6 +2,7 @@
 
 **Intelligent Road & Civic Damage Detection, Dispatch & Accountability Platform**
 
+> **🔗 Live app:** https://roadsense-ai-8858c.web.app
 > Problem Statement 2 — *Community Hero: Hyperlocal Problem Solver*
 > Built with **Gemini 2.5** (Vision + **Function Calling** + **Google Search grounding**) as the core.
 > Full-stack: React PWA frontend + Cloud Run–ready Node backend.
